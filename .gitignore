@@ -1,0 +1,16 @@
+# Virtual environment
+env/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Logs and runtime files
+*.log
+*.pid
+screen.png
+
+# IDE and OS files
+.vscode/
+.idea/
+.DS_Store
