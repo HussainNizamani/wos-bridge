@@ -58,7 +58,7 @@ An OCR-based bridge that captures the in-game chat of **Whiteout Survival (WoS)*
    Open `reader.py` and customize the config variables at the top of the file:
    - `DEVICE`: ADB tailnet IP/port of the game box.
    - `WEBHOOK_URL`: Your Discord channel webhook URL.
-   - Coordinate crops (`LEFT`, `RIGHT`, `CHAT_TOP`, `CHAT_BOTTOM`) if running on a resolution other than 720x1280.
+   - **Resolution Crops**: The coordinate variables (`LEFT`, `RIGHT`, `CHAT_TOP`, `CHAT_BOTTOM`) are calibrated and **work only on the 720x1280 resolution**. If your device/emulator uses a different resolution, you must adjust and recalibrate these crop coordinates.
 
 4. **Launch the bridge**:
    Using `start.sh`:
