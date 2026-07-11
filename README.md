@@ -4,7 +4,7 @@ An OCR-based bridge that captures the in-game chat of **Whiteout Survival (WoS)*
 
 ## Features
 
-- **Optimized for ARM Architecture**: Powered by `RapidOCR` using the `PP-OCRv5` model running on ONNX Runtime. This is optimized specifically for ARM architectures (such as ARM64 game boxes) where standard `PaddleOCR` suffers from engine instability and installation issues. It provides identical accuracy with lightweight, stable execution.
+- **Optimized for ARM Host Architecture**: The bridge script is optimized to run on ARM-based host servers (such as Ampere A1 instances). While standard `PaddleOCR` suffers from engine instability and installation issues on ARM host environments, this script uses `RapidOCR` with `ONNX Runtime` to ensure lightweight, stable, and highly accurate OCR execution. *(Note: The architecture of the target Android device/gamebox itself does not matter).*
 - **Reply Bubble Detection & Filtering**: Intelligent reply-bubble filtering using both visual background color checks (grey-scale detection) and name-pattern checks to discard quoted text and avoid duplicating messages.
 - **System Message Detection**: Automatically extracts alliance system events (join/leave notifications, promotions, etc.) and formats them under a `[System]` sender.
 - **Noise Filtering**: Automatically ignores automated spam notifications (like "Alliance Gift received" alerts).
